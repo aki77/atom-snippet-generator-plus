@@ -1,0 +1,33 @@
+{
+  "name": "snippet-generator-plus",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Generate snippet from code",
+  "keywords": [
+    "snippet",
+    "generator"
+  ],
+  "activationCommands": {
+    "atom-text-editor": "snippet-generator-plus:generate"
+  },
+  "repository": "https://github.com/aki77/atom-snippet-generator-plus",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-select-list": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  },
+  "consumedServices": {
+    "snippets": {
+      "versions": {
+        "0.1.0": "consumeSnippets"
+      }
+    }
+  }
+}
